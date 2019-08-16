@@ -4,7 +4,7 @@ const fs = require('fs')
 const path = require('path')
 const qbit = require('./qbit')
 
-const PORT = process.env.PORT || 3000
+const PORT = Number(process.env.PORT || 3000);
 
 const newest_torrent = {
   name: '',
